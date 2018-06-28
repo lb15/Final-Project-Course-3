@@ -1,3 +1,5 @@
+library(dplyr)
+
 ### read in all data files
 
 test_set <- read.table("test/X_test.txt")
@@ -84,6 +86,6 @@ colnames(tidy_dataset) <- new_meas5
 
 tidy_mean <- tidy_dataset %>% group_by(subjectID,activity) %>% summarise_at(.vars =c(4:69),.funs = mean )
 
-write.table(tidy_mean,file="tidy_mean.txt")
+write.table(tidy_mean,file="tidy_mean.txt",row.names = FALSE)
 
 
