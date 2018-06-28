@@ -10,13 +10,19 @@ The following steps are taken to make a tidy dataset:
 2. The mean and standard deviation of the measurements were extracted from the dataset. Included measurements were required to have both a mean and standard deviation available. Therefore, measurements with only a mean calculation (i.e. meanFreq) were not included.
 
 3. The activities were given descriptive names:
-	walking
-	walking upstairs
-	walking downstairs
-	sitting
-	standing
+	walking,
+	walking upstairs,
+	walking downstairs,
+	sitting,
+	standing,
 	laying
 
 4. The measurements for each activity were given descriptive names. The measurements  included are listed in the codebook under Feature Selection.
 
 5. A tidy dataset with the average of each variable for each activity and each subject. This tidy dataset is written to a file called tidy_mean.txt.
+
+To run the script:
+
+Download the run_script.R file and zip folder containing the dataset, available below. Set the working directory to the folder containing the dataset. Run script.
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
